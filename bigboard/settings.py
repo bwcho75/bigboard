@@ -83,3 +83,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Python Social Auth configuration
+FACEBOOK_APP_ID='201957690011015'
+FACEBOOK_API_SECRET='16820a68af58c909ceeb7c9f9cc77d02'
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.facebook.FacebookBackend',
+)
+

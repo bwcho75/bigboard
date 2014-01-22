@@ -1,0 +1,6 @@
+Manual - http://c2journal.com/2013/01/24/social-logins-with-django/
+http://stackoverflow.com/questions/15215668/how-can-i-use-django-social-auth-to-connect-with-twitter
+
+pip install django-social-auth
+
+facebook¿¡¼­ ¾Û »ý¼º ÇÑÈÄ, ¾ÛID¿Í ¾Û ½ÃÅ©¸´ ÄÚµå Ãëµæ
