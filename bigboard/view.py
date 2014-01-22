@@ -6,6 +6,6 @@ import requests
 
 def home(request):
     context=Context({"name":"terry"})
-    template = loader.get_template("home.html")
+    template = loader.get_template("home_style2.html")
     return HttpResponse(template.render(context))
     

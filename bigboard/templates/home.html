@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+	<script src="./libs/bootstrap/bootstrap.min.js"></script>
+	<script src="./js/bigboard.js"></script>
+	<link href="./css/bootstrap.css" rel="stylesheet">
+
+	<!-- define css -->
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+	<!-- top navigation bar -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+					<div class="navbar-header">
+						 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+						 <a class="navbar-brand" href="#"><img src="img/fb.png" width=27 margin=0> Server Side Architecture Group</a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+						<form class="navbar-form navbar-right" role="search">
+						<button type="button" class="btn btn-info btn-default">Go to group</button>
+						<button type="button" class="btn btn-primary btn-default">Posting</button>
+							<div class="form-group">
+								<input type="text" class="form-control" />
+							</div> <button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					
+	</nav>
+	<div style="height: 60px;"></div>
+	<div class="container">
+		<div class="row">
+			<!-- left pannel -->
+			<div class="col-sm-2">
+				Left pannel
+			</div>
+			<!-- center pannel -->
+			<div class="col-sm-7">
+				<input type="checkbox" ng-model="hide_posting_area">
+				<div id="posting_area" class="check-element animate-hide" ng-hide="hide_posting_area">
+					<textarea name="post" style="width:100%" rows="4"></textarea>
+					<div style="height: 5px;"></div>
+					<button type="button" class="btn btn-primary btn-xs" onClick="alert('Hello');">POST</button>
+					<button type="button" class="btn btn-primary btn-xs" >CANCEL</button>
+				</div>
+			</div>
+			<!-- right pannel -->
+			<div class="col-sm-3">
+				Right Pannel
+			</div>
+		</div>
+	</div>
+
+ 
+
+</body>
+</html>

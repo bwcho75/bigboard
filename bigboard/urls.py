@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
-from home.view import home
+from view import home
+from apis import writePost
 
 from django.contrib import admin
 admin.autodiscover()
@@ -11,4 +12,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^home/$',home)
+    #url(r'^api/writePost/$',writePost)
 )
